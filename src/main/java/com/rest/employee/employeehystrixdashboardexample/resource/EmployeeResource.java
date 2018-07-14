@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/rest/api")
 public class EmployeeResource {
 
     @Autowired
@@ -18,4 +17,8 @@ public class EmployeeResource {
         return employeeService.getEmployee();
     }
 
+    @GetMapping("")
+    public String getVal(){
+        return "Welcome itechsearch" ;
+    }
 }
