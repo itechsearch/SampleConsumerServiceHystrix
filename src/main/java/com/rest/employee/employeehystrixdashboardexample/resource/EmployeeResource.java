@@ -17,7 +17,7 @@ public class EmployeeResource {
         return employeeService.getEmployee();
     }
 
-    @GetMapping("")
+    @GetMapping("/")
     public String getVal(){
         return "Welcome itechsearch" ;
     }
